@@ -25,7 +25,7 @@ import { FaCommentDollar, FaMap } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="mt-32 mb-2 w-full max-w-7xl mx-auto px-2 2xl:px-0 bg-mapa-mundi bg-center bg-no-repeat bg-contain text-center xl:text-left">
+    <main className="mt-32 mb-2 w-full max-w-7xl mx-auto px-2 2xl:px-0 bg-mapa-mundi bg-no-repeat bg-contain text-center xl:text-left">
       <div className="flex items-start justify-center xl:justify-between">
         <section>
           <span className="text-lg border-2 p-3 rounded-full border-gray-300">Reserve conosco!</span>
