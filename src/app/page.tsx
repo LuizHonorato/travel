@@ -87,23 +87,23 @@ export default function Home() {
 
       <section className="mt-20">
         <div className="flex flex-col md:flex-row flex-wrap items-center gap-7">
-          <div className="bg-blue-500 flex flex-1 items-center justify-start p-6 rounded h-60">
+          <div className="bg-blue-500 w-full flex flex-1 items-center justify-start p-6 rounded h-60">
             <div className="flex flex-col items-start">
               <h2 className="text-white text-2xl font-medium">Veja promoções!</h2>
               <p className="text-white text-md mt-4">Não perca essas oportunidades incríveis!</p>
               <button className="bg-white text-blue-500 text-lg px-5 py-2 rounded mt-6">Ver viagens</button>
             </div>
-            <Image src={traveler} alt="Newsletter" width={300} />
+            <Image src={traveler} alt="Newsletter" className="w-[300px] hidden 2xl:block" />
           </div>
           
-          <div className="bg-yellow-400 flex flex-1 items-center justify-between p-6 rounded h-60">
-            <div className="flex flex-col items-start">
+          <div className="bg-yellow-400 w-full flex flex-1 items-center justify-between p-6 rounded h-60 gap-5">
+            <div className="flex flex-col w-full items-start text-left">
               <h2 className="text-white text-2xl font-medium">Não perca nada!</h2>
               <p className="text-white text-md mt-4">Inscreva-se na nossa newsletter e fique por dentro das novidades!</p>
               
-              <form className="mt-6">   
+              <form className="mt-6 w-full">   
                   <div className="relative">
-                      <input type="search" id="search" className="block w-full p-2 ps-4 text-lg text-gray-500 border-2 rounded-lg focus:border-blue-500 focus:outline-none h-12" placeholder="Seu e-mail" required />
+                      <input type="search" id="search" className="w-full p-1 ps-4 text-lg text-gray-500 border-2 rounded-lg focus:border-blue-500 focus:outline-none h-12" placeholder="Seu e-mail" required />
                       <button type="submit" className="absolute end-6 bottom-3">
                           <HiPaperAirplane size={24} color='#3b82f6' />
                       </button>
@@ -111,7 +111,7 @@ export default function Home() {
               </form>
 
             </div>
-            <Image src={newsletterImg} alt="Newsletter" width={300} />
+            <Image src={newsletterImg} alt="Newsletter" className="w-[250px] hidden 2xl:block" />
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaPrint, FaFacebook, FaInstagram, FaYoutube
 export function Footer() {
     return (
         <footer className="mt-20 mb-20 w-full mx-auto bg-gray-50">
-            <div className="flex mx-auto items-center justify-around max-w-7xl py-10 border-b-2 border-gray-200 mb-10">
+            <div className="flex flex-col md:flex-row gap-5 mx-auto items-center justify-around max-w-7xl py-10 border-b-2 border-gray-200 mb-10">
                 <h1 className="text-3xl md:text-5xl font-bold text-blue-500">
                     T⋅R⋅A⋅V⋅E⋅L⋅⊳
                 </h1>
@@ -32,15 +32,15 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-between w-full mx-auto max-w-7xl pb-5">
-                <div className="flex space-x-5">
-                    <span>Sobre nós</span>
-                    <span>Contate-nos</span>
-                    <span>Ajuda</span>
-                    <span>Política de Privacidade</span>
-                    <span>Reclamações</span>
+            <div className="flex flex-col md:flex-row items-center justify-between w-full mx-auto max-w-7xl px-2 pb-5">
+                <div className="flex flex-col md:flex-row gap-5 text-center">
+                    <span className="text-sm">Sobre nós</span>
+                    <span className="text-sm">Contate-nos</span>
+                    <span className="text-sm">Ajuda</span>
+                    <span className="text-sm">Política de Privacidade</span>
+                    <span className="text-sm">Reclamações</span>
                 </div>
-                <span>Copyright © {new Date().getFullYear()}</span>
+                <span className="text-center text-sm mt-5">Copyright © {new Date().getFullYear()}</span>
             </div>
         </footer>
     );
